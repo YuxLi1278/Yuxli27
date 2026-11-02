@@ -5,7 +5,12 @@ Recommended citation: {{ include.citation }}<br />
 <!-- Create the variable so it exists in the event there is no citation -->
 {% assign block = "" %}
 {% if include.paperurl %}
-{% capture block %}{{ block }}<a href="{{ include.paperurl }}">Download Paper</a> | {% endcapture %}
+{% if include.paperurl contains '://' %}
+{% assign paperurl = include.paperurl %}
+{% else %}
+{% assign paperurl = include.paperurl | relative_url %}
+{% endif %}
+{% capture block %}{{ block }}<a href="{{ paperurl }}">Download Paper</a> | {% endcapture %}
 {% endif %}
 {% if include.slidesurl %}
 {% capture block %}{{ block }}<a href="{{ include.slidesurl }}">Download Slides</a> | {% endcapture %}

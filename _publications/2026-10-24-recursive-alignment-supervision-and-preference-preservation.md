@@ -5,7 +5,7 @@ category: manuscripts
 permalink: /publication/recursive-alignment-supervision-and-preference-preservation
 date: 2026-10-24
 status: "Preprint"
-paperurl: "/files/Recursive_Alignment_Supervision_and_Preference_Preservation%20(2).pdf"
+paperurl: "/files/recursive-alignment-supervision-and-preference-preservation.pdf"
 citation: 'Yuxuan Li. (2026). "Recursive Alignment: Supervision and Preference Preservation." Preprint.'
 excerpt: >-
   This survey examines what alignment methods preserve as AI systems are trained
